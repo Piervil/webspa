@@ -1,0 +1,288 @@
+/* MAIN STYLING & RESET */
+:root {
+	--color-primary: #1dde97;
+	--btn-color: #333333;
+	--gris: #f5f5f5;
+	--gris2: #cfcfcf; 
+	--negro: #000000;
+	--blanco: #ffffff;
+	
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: sans-serif;
+}
+
+/* .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+} */
+
+img {
+	max-width: 100%;
+}
+
+/* HEADER */
+.header {
+	width: 100%;
+	background-color: var(--negro);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .3rem 10rem;
+}
+
+.header__logo {
+	width: 5rem;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.header__link {
+	color: var(--blanco);
+	font-size: 2rem;
+	font-weight: 600;
+	padding: .5rem 1.2rem;
+}
+
+.header__link-active {
+	background-color: var(--color-primary);
+	color: var(--negro);
+	padding: .5rem 1.2rem;
+	border-radius: 1rem;
+}
+
+.header__link:hover {
+	background-color: var(--color-primary);
+	color: var(--negro);
+	padding: .5rem 1.2rem;
+	border-radius: 1rem;
+}
+
+/* SHOWCASE */
+.showcase {
+	background: url("../img/bg-1.jpg") no-repeat center center;
+	background-size: cover;
+	height: 50rem;
+	color: var(--blanco);
+}
+
+.showcase__flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	padding-top: 15rem;
+}
+
+.showcase__title {
+	font-size: 6rem;
+}
+
+.showcase__title span {
+	color: var(--color-primary);
+}
+
+.showcase__text {
+	width: 70%;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 1.4;
+}
+
+.btn {
+	background-color: var(--color-primary);
+	color: var(--blanco);
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 1rem 3rem;
+	margin-top: 1rem;
+	border-radius: .5rem;
+}
+
+.btn:hover {
+	background-color: #11704d;
+}
+
+/* SPA */
+.spa__flex {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+.spa__img {
+	width: 300rem;
+}
+
+.spa__title {
+	font-size: 3rem;
+	padding-top: 3rem;
+	text-align: center;
+}
+
+.spa__title span {
+	color: var(--color-primary);
+}
+
+.spa__text {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.spa__btn {
+	display: block;
+	text-align: center;
+	margin: 1rem auto;
+	width: 70%;
+}
+
+/* FEATURE */
+.feature__flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.feature__box {
+	background-color: var(--gris2);
+	text-align: center;
+	padding: 2.5rem;
+	width: 35rem;
+	min-height: 20rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.box1 {
+	background-color: var(--gris);
+}
+
+.box2 {
+	background-color: var(--color-primary);
+}
+
+.fa-solid {
+	font-size: 4rem;
+	padding: 2rem 0;
+}
+
+.feature__title {
+	padding-bottom: 1rem;
+}
+
+.feature__text {
+	font-size: 1.7rem;
+}
+
+/* FOOTER */
+.footer {
+	background-color: var(--negro);
+	color: var(--blanco);
+	text-align: center;
+	padding: 2.5rem;
+}
+
+
+/* PAGE EMPRESA */
+.showcase__empresa {
+	background: linear-gradient(#000000bd, #000000a2), url("../img/nosotros.jpg");
+}
+
+.testimony__title {
+	font-size: 4rem;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.testimony__flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.testimony__info {
+	background-color: var(--color-primary);
+	width: 30%;
+	padding: 2rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	margin-bottom: 5rem;
+}
+
+.testimony__img {
+	width: 5rem;
+	border-radius: 50%;
+}
+
+/* PAGE CONTACTO */
+.showcase__contacto {
+	background: linear-gradient(#000000bd, #000000a2), url("../img/imagen1.jpg") center center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	padding: 2rem;
+	width: 40rem;
+	margin: 4rem auto;
+	background: var(--color-primary);
+	border-radius: 1rem;
+	box-shadow: 0 0 15px var(--gris2);
+}
+
+.form__title {
+	text-align: center;
+}
+
+label, input {
+	padding: .5rem;
+	font-size: 1.5rem;
+}
+
+label, input::placeholder {
+	color: var(--negro);
+}
+
+input, textarea {
+	border: 1px solid #656565;
+	outline: none;
+	resize: none;
+}
+
+.form__btn {
+	background-color: var(--btn-color);
+	color: var(--blanco);
+	font-size: 1.9rem;
+	padding: .6rem;
+	border-radius: .5rem;
+	border: none;
+	cursor: pointer;
+}

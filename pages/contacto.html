@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Bienvenidos al SPA Zahara donde te cuidamos con amor">
+    <meta name="keywords" content="spa, belleza, cuidado de la piel, masajes">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+		<script src="https://kit.fontawesome.com/1444685f3d.js" crossorigin="anonymous"></script>
+		<!-- LIKNS CSS -->
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/mobil.css" media="screen and (max-width:680px)">
+		<title>Contacto</title>
+  </head>
+  <body>
+		<header class="header">
+			<a class="header__logo" href="../index.html"><img src="../img/logo.png" alt="logo del sitio"></a>
+			<nav class="header__nav">
+			<ul class="header__menu">
+				<li><a class="header__link" href="../index.html">Inicio</a></li>
+				<li><a class="header__link" href="empresa.html">Empresa</a></li>
+				<li><a class="header__link header__link-active" href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		</header>
+		<!-- SHOWCASE -->
+		<section class="showcase showcase__contacto">
+			<div class="container">
+				<div class="showcase__flex">
+					<h1 class="showcase__title"><span>Acerca de</span> SPA Zahara</h1>
+					<p class="showcase__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus.</p>
+					<a class="btn showcase__btn" href="contacto.html">Contactenos</a>
+				</div>
+			</div>
+		</section>
+		<!-- FORM -->
+		<form action="https://formsubmit.co/j.piervil@yahoo.com" method="post">
+			<h2 class="form__title">Contáctanos</h2>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Ingrese tu nombre" required>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="Ingrese tu email" required>
+			<label for="mensaje">Mensaje:</label>
+			<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+			<button class="form__btn" type="submit">Enviar</button>
+		</form>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<p>Spa Zahara &copy; 2024, Todos los derechos reservados</p>
+			</div>
+		</footer>
+	</body>
+</html>
